@@ -1,0 +1,79 @@
+<!--@subject Potvrda korisničkog računa za {{var customer.name}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"store url=\"customer/account/\"":"Customer Account Url",
+"htmlescape var=$customer.name":"Customer Name",
+"var customer.email":"Customer Email",
+"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url",
+"htmlescape var=$customer.password":"Customer password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="email-heading">
+                        <h1>Zahvaljujemo na registraciji na {{var store.getFrontendName()}}.</h1>
+                    </td>
+                    <td class="store-info">
+                        <h4>Pitanja?</h4>
+                        <p>
+                            {{depend store_phone}}
+                            <b>Nazovite nas:</b>
+                            <a href="tel:{{var phone}}">{{var store_phone}}</a><br>
+                            {{/depend}}
+                            {{depend store_hours}}
+                            <span class="no-link">{{var store_hours}}</span><br>
+                            {{/depend}}
+                            {{depend store_email}}
+                            <b>Email:</b> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            {{/depend}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+		</td>
+	</tr>
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="action-content">
+                        
+                        <p>Dobrodošli u obitelj registriranih korisnika najveće medicinske trgovine u Hrvatskoj. Kada potvrdite Vaš korisnički račun možete
+						naručivati u nekoliko sekundi, pregledavati Vaše prethodne narudžbe i recenzirati proizvode.<br />
+						Pozivamo Vas da svaki kupljeni proizvod komentirate i time pomognete drugim korisnicima u odabiru pravog proizvoda.</p>
+                        <p class="highlighted-text">
+                            Koristite sljedeće informacije za prijavu:<br/>
+                            <strong>Email:</strong> {{var customer.email}}<br/>
+                        </p>
+                        <p>Kliknite ovdje za potvrdu Vašeg email-a (ovaj link vrijedi samo jednom):</p>
+                        <table cellspacing="0" cellpadding="0" class="action-button" >
+                            <tr>
+                                <td>
+                                    <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}"><span>&nbsp;&nbsp;Potvrdi korisnički račun&nbsp;&nbsp;</span></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>
+                            Ako imate pitanja slobodno nas kontaktirajte na
+                            <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            {{depend store_phone}} ili telefonski <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

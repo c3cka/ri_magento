@@ -1,0 +1,45 @@
+<!--@subject Dobrodošli, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email",
+"htmlescape var=$customer.password":"Customer Password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Dobrodošli na {{var store.getFrontendName()}}.</h1>
+            <p>Za prijavu stisnite na <a href="{{store url="customer/account/"}}">Prijava</a> ili <a href="{{store url="customer/account/"}}">Moj račun</a> na vrhu svake stranice i unesite svoj email i lozinku.</p>
+            <p class="highlighted-text">
+                Vaše informacije su:<br/>
+                <strong>Email</strong>: {{var customer.email}}<br/>
+                <strong>Lozinka</strong>: {{htmlescape var=$customer.password}}
+            </p>
+            <p>Nakon prijave možete sljedeće:</p>
+            <ul>
+                <li>Brza narudžba</li>
+                <li>Provjera stanja narudžbi</li>
+                <li>Pregled prošlih narudžbi</li>
+                <li>Promjena vaših informacija poput adrese</li>
+                <li>Promjena lozinke</li>
+                <li>Pregled trajnih narudžbi</li>
+            </ul>
+            <p>
+                Ako imate pitanje slobodno nas kontaktirajte
+                <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                {{depend store_phone}} ili telefonski <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
