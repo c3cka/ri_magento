@@ -4229,7 +4229,7 @@ body.catalogsearch-result-index .page-title h1 {
 .products-grid .actions .button {
   white-space: normal;
   /*flex-grow: 2;*/
-  margin-right: 25%;
+  margin-right: 40%;
 }
 
 /* -------------------------------------------- *
@@ -10680,15 +10680,16 @@ body{
 }
 
 .products-grid li {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   flex-grow: 1;
 }
 
 .products-grid > li {
   border: 1px solid rgba(66,119,180,0.35);
+  overflow: hidden;
 }
 
 .products-grid > li:hover {
@@ -10696,21 +10697,31 @@ body{
   -moz-box-shadow: 0px 0px 15px 0px rgba(66,119,180,0.5);
   box-shadow: 0px 0px 15px 0px rgba(66,119,180,0.5);
   border: 1px solid rgba(66,119,180,0.75);
-  top: -2px;
+  /*top: -2px;*/
 }
 
 .btn-cart span.fa:hover {
-  background: #ffffff;
-  color: #4277b4;
+  background: #4277b4;
+  color: #FFFFFF;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+}
+.fa-cart-plus:hover:before {
+  content: "Dodaj u košaricu";
+  font-size: 16px;
 }
 .btn-cart span.fa {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   font-size: 20px;
   background: #4277b4;
   padding: 10px;
+  width: 40px;
+  height: 40px;
 }
 .btn-cart {
   padding: 0;
@@ -10722,14 +10733,106 @@ ul.add-to-links li:hover span {
   background: #4277b4;
 }
 ul.add-to-links li span {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   padding: 10px;
   font-size: 20px;
 }
 ul.add-to-links li {
   padding: 0;
   margin: auto 0;
+}
+.product-info .actions {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  background-color: rgba(255,255,255, 0.75);
+  padding: 0;
+  top: -50px;
+  height: 40px;
+  opacity: 0;
+  /*-webkit-transition: height 0.3s ease-out;*/
+  /*-moz-transition: height 0.3s ease-out;*/
+  /*-o-transition: height 0.3s ease-out;*/
+  /*transition: height 0.3s ease-out;*/
+}
+
+.catalog-category-view .products-grid > li:hover > .product-info .actions {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+.products-grid > li img {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  max-width: 100% !important;
+}
+.products-grid > li:hover img {
+  /*transform: scale(1.05, 1.05);*/
+}
+
+/*.product-info .actions:hover {*/
+  /*opacity: 1;*/
+  /*animation-name: fadeInOpacity;*/
+  /*animation-iteration-count: 1;*/
+  /*animation-timing-function: ease-in;*/
+  /*animation-duration: 2s;*/
+/*}*/
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* KOS MOBILE ACTIONS VIEW */
+  .product-info .actions {
+    display: flex;
+    position: relative !important;
+    padding: 10px !important;
+    width: 100%;
+    height: auto !important;
+    top: 0 !important;
+    opacity: 1 !important;
+  }
+
+  .products-list .action .button,
+  .products-grid .actions .button {
+    white-space: normal;
+    /*flex-grow: 2;*/
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .products-list .action .button,
+  .products-grid .actions .button {
+    white-space: normal;
+    /*flex-grow: 2;*/
+    margin-right: 7%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .products-grid > li {
+    width: 100% !important;
+  }
+
+  .products-list .action .button,
+  .products-grid .actions .button {
+    white-space: normal;
+    /*flex-grow: 2;*/
+    margin-right: 20% !important;
+  }
 }
