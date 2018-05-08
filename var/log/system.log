@@ -1,0 +1,16 @@
+2018-05-04T13:29:12+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-04T13:57:23+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-07T11:14:09+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-08T12:09:37+00:00 ERR (3): Notice: Undefined variable: _symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:09:37+00:00 ERR (3): Notice: Undefined variable: _symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:09:37+00:00 ERR (3): Notice: Undefined variable: _symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:09:37+00:00 ERR (3): Notice: Undefined variable: _symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:24:42+00:00 ERR (3): Notice: Undefined variable: symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:24:42+00:00 ERR (3): Notice: Undefined variable: symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:24:42+00:00 ERR (3): Notice: Undefined variable: symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T12:24:42+00:00 ERR (3): Notice: Undefined variable: symbol  in C:\xampp\htdocs\dev.rijeka.hr\app\design\frontend\suvenir\default\template\directory\currency.phtml on line 42
+2018-05-08T13:28:14+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\lib\Varien\File\Uploader.php on line 522
+2018-05-08T13:29:35+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\lib\Varien\File\Uploader.php on line 522
+2018-05-08T13:29:48+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\lib\Varien\File\Uploader.php on line 522
+2018-05-08T13:31:51+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\lib\Varien\File\Uploader.php on line 522
+2018-05-08T13:32:07+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\lib\Varien\File\Uploader.php on line 522

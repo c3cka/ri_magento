@@ -1,0 +1,81 @@
+.flag-link img { max-height: 20px; vertical-align: middle; }
+
+.eflags-inline .flag-link { display: inline-block; margin: 0 0 0 4px; text-transform: uppercase; text-decoration: none; }
+.eflags-inline .flag-link:hover { text-decoration: none; }
+.eflags-inline .flag-link span {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 0.9em;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+.eflags-select { height: 20px; min-width: 100px; }
+.eflags-select .flag { display: inline-block; max-height: 18px; vertical-align: middle; }
+.eflags-select.chosen-container-single .chosen-single {
+    border-radius: 1px;
+    height: 20px;
+    line-height: 18px;
+    padding: 0 0 0 4px;
+}
+.eflags-select.chosen-container-single .chosen-single:hover { text-decoration: none; }
+.eflags-select.chosen-container .chosen-results li { padding: 4px 3px; color: #444; }
+.eflags-select.chosen-container .chosen-results li.highlighted { color: #fff; }
+.eflags-select.chosen-container-single .chosen-drop { border-radius: 0 0 1px 1px; }
+.eflags-select.chosen-container-single .chosen-single div b,
+.eflags-select.chosen-container-active.chosen-with-drop .chosen-single div b { background-position-y: 0; }
+/* uncomment code below if you want to hide selected options */
+.eflags-select .chosen-results li.result-selected { /*display: none; */ }
+
+/* animated easyflags selector apearing */
+.form-language { transition: opacity 200ms ease-in-out; opacity: 1; }
+.eflags-hidden { opacity: 0; }
+
+.store-switcher.eflags-stores-moved { float: left; margin-right: 10px; }
+
+.eflags-popup .overlay {
+    background-color: rgba(0,0,0,.05);
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: normal;
+    text-align: center;
+    text-transform: none;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 601;
+}
+.eflags-popup .overlay:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.eflags-popup .popup {
+    background-color: white;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 200px;
+    padding: 10px;
+    position:relative;
+    vertical-align: middle;
+    box-shadow: 0 0 7px #777;
+    color: #333;
+}
+.eflags-popup .popup a { color: #333; text-transform: none; }
+.eflags-popup .popup h3 { margin-bottom: 12px; }
+.eflags-popup .popup .close {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.eflags-popup .flag-link img { margin-right: 5px; }
+.eflags-popup .popup .flag-link { display: block; margin: 5px; padding: 5px; }
+.eflags-popup .popup .flag-link:hover { background-color: rgba(0, 0, 0, .05); }
+.eflags-popup .overlay:target { display: block; }
