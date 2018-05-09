@@ -32,23 +32,12 @@
  */
 ?>
 <?php if(count($this->getStores())>1): ?>
-  <div class="form-language">
-    <div class="flag-wrapper">
-      <?php foreach ($this->getStores() as $_lang): ?>
-        <?php if($_lang->getId() == $this->getCurrentStoreId()): ?>
-          <img src="<?php echo $this->getSkinUrl('images/flags/' . $_lang->getCode() . '.gif');?>" alt="<?php echo
-          $this->htmlEscape($_lang->getName()) ?>">
-        <?php endif; ?>
-      <?php endforeach ?>
-    </div>
-    <select id="select-language" title="<?php echo $this->__('Language') ?>" onchange="window.location.href=this.value">
-      <?php foreach ($this->getStores() as $_lang): ?>
+<div class="form-language">
+    <select id="select-language" title="<?php echo $this->__('Your Language') ?>" onchange="window.location.href=this.value">
+    <?php foreach ($this->getStores() as $_lang): ?>
         <?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? ' selected="selected"' : '' ?>
-        <option value="<?php echo $_lang->getCurrentUrl() ?>" style="background-image:url('<?php echo $this->getSkinUrl('images/flags/'.$_lang->getCode().'.gif') ?>');" <?php echo $_selected ?>>
-<!--          --><?php //echo $this->escapeHtml($_lang->getCode()) ?>
-
-        </option>
-      <?php endforeach; ?>
+        <option value="<?php echo $_lang->getCurrentUrl() ?>"<?php echo $_selected ?>><?php echo $this->escapeHtml($_lang->getName()) ?></option>
+    <?php endforeach; ?>
     </select>
-  </div>
+</div>
 <?php endif; ?>
