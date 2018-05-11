@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mage_ImageResizeAndCrop>
+      <version>0.0.1</version>
+    </Mage_ImageResizeAndCrop>
+  </modules>
+  <global>
+    <events>
+      <catalog_product_save_after>
+        <observers>
+          <mage_productlogupdate>
+            <class>mage_productlogupdate/observer</class>
+            <method>logUpdate</method>
+            <type>singleton</type>
+          </mage_productlogupdate>
+        </observers>
+      </catalog_product_save_after>
+    </events>
+  </global>
+</config>

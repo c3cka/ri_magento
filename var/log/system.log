@@ -21,3 +21,4 @@
 2018-05-10T07:28:54+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
 2018-05-10T07:49:49+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
 2018-05-10T10:45:01+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-11T08:43:45+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mage_ImageResizeAndCrop>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Mage_ImageResizeAndCrop>
+  </modules>
+</config>

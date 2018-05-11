@@ -30,14 +30,29 @@
 
 <div class="header-language-background">
     <div class="header-language-container">
-      <a class="logo" href="<?php echo $this->getUrl('') ?>">
-        <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
-        <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
-      </a>
+      <div class="header-links">
+        <div class="homepage-link">
+          <a class="logo" href="<?php echo $this->getUrl('') ?>">
+            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
+            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
+          </a>
+        </div>
 
-      <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
-      // See app.js for details ?>
-      <div class="store-language-container"></div>
+        <div class="back-to-tzri">
+          <a class="tz-logo" href="http://www.visitrijeka.hr/">
+            <img src="/skin/frontend/suvenir/default/images/tz_logo.png" alt="TZ logo" class="tz-large" />
+          </a>
+        </div>
+      </div>
+<!--      --><?php //// In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
+//      // See app.js for details ?>
+<!--      <div class="store-language-container"></div>-->
+
+      <!-- Search -->
+
+      <div id="header-search" class="skip-content">
+        <?php echo $this->getChildHtml('topSearch') ?>
+      </div>
 
       <!-- Skip Links -->
 
@@ -63,12 +78,6 @@
             <?php echo $this->getChildHtml('minicart_head'); ?>
           </div>
         </div>
-      </div>
-
-      <!-- Search -->
-
-      <div id="header-search" class="skip-content">
-        <?php echo $this->getChildHtml('topSearch') ?>
       </div>
 
       <!-- Account -->
