@@ -150,15 +150,11 @@
                     <?php endif; ?>
                     <div class="actions">
                         <?php if(!$_product->canConfigure() && $_product->isSaleable()): ?>
-<!--                    ORIGINAL BUTTON
-                         <button type="button" title="--><?php //echo $this->quoteEscape($this->__('Add to
-                      // Cart')) ?><!--" class="button btn-cart" onclick="setLocation('--><?php //echo
-                      // $this->getAddToCartUrl($_product) ?><!--')"><span><span>--><?php //echo $this->__('Add to
-                          // Cart') ?><!--</span></span></button>-->
+<!--                    ORIGINAL BUTTON               -->
+                         <button type="button" title="<?php echo $this->quoteEscape($this->__('Add to Cart')) ?>"
+                           class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')">
+                           <span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
                           <!-- KOS CART ICON -->
-                          <button type="button" title="<?php echo $this->quoteEscape($this->__('Add to Cart')) ?>"
-                            class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl
-                          ($_product) ?>')"><span class="fa fa-cart-plus"></span></button>
                         <?php elseif($_product->getStockItem() && $_product->getStockItem()->getIsInStock()): ?>
                             <a title="<?php echo $this->quoteEscape($this->__('View Details')) ?>" class="button" href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('View Details') ?></a>
                         <?php else: ?>

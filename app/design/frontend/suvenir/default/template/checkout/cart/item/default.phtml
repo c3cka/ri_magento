@@ -325,7 +325,8 @@ $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage
     </td>
     <?php endif; ?>
     <td class="a-center product-cart-remove">
-        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Remove Item')) ?>" class="btn-remove btn-remove2"><?php echo $this->__('Remove Item') ?></a>
+<!--        <a href="--><?php //echo $this->getDeleteUrl() ?><!--" title="--><?php //echo Mage::helper('core')->quoteEscape($this->__('Remove Item')) ?><!--" class="btn-remove btn-remove2">--><?php //echo $this->__('Remove Item') ?><!--</a>-->
+        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Remove Item')) ?>" class="cart-remove-button"><span class="fa fa-trash-o"></span></a>
     </td>
 </tr>
 

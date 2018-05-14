@@ -22,3 +22,18 @@
 2018-05-10T07:49:49+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
 2018-05-10T10:45:01+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
 2018-05-11T08:43:45+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-14T07:25:03+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-14T08:10:39+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-14T10:32:35+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-14T12:46:44+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T12:46:51+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T12:58:20+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T12:59:05+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:00:08+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:27:43+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:41:23+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:42:15+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:45:49+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:48:30+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:48:57+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-14T13:50:49+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
