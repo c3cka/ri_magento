@@ -37,3 +37,9 @@
 2018-05-14T13:48:30+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
 2018-05-14T13:48:57+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
 2018-05-14T13:50:49+00:00 ERR (3): Warning: A non-numeric value encountered  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Shipping\Model\Carrier\Abstract.php on line 466
+2018-05-15T06:36:21+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-15T06:36:24+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-15T06:36:30+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-15T07:49:43+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-15T07:49:52+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105
+2018-05-15T09:49:05+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Wishlist\Model\Observer.php on line 105

@@ -1314,7 +1314,7 @@ a.button:hover {
 @media only screen and (min-width: 480px) {
   .main-container,
   .footer-container {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
   }
 }
 .footer-container {
@@ -3316,7 +3316,7 @@ body {
   /*top: -50px; V1*/
 }
 .logo img {
-  max-width: 100%;
+  /*max-width: 100%;*/
   /* KOS */
   height: 50px;
 }
@@ -3927,7 +3927,7 @@ a.skip-link:hover{
     position: absolute;
     z-index: 200;
     top: 50px;
-    right: 566px;
+    /*right: 566px;*/
     width: 200px;
   }
 
@@ -4002,8 +4002,8 @@ a.skip-link:hover{
     position: absolute;
     z-index: 200;
     top: 50px;
-    /*right: 0;*/
-    width: 320px;
+    right: 0;
+    width: 300px;
     background: white;
   }
 }
@@ -4168,7 +4168,7 @@ a.skip-link:hover{
   clear: both;
   width: 100%;
   border-top: 1px solid #cccccc;
-  padding-top: 30px;
+  padding-top: 20px;
   /* -------------------------------------------- *
    * Social icons
    */
@@ -4193,7 +4193,7 @@ a.skip-link:hover{
   float: left;
   width: 17%;
   padding: 0 30px 0 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .footer .links li {
   word-break: break-all;
@@ -5421,7 +5421,7 @@ p.product-name a:hover {
   height: 25px;
 }
 .product-view .add-to-cart-buttons {
-  float: left;
+  /*float: left;*/
   margin-right: 10px;
   max-width: 100%;
 }
@@ -6340,7 +6340,7 @@ p.product-name a:hover {
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .checkout-cart-index #postcode {
@@ -6433,7 +6433,7 @@ p.product-name a:hover {
 .cart .page-title h1 {
   float: left;
   border-bottom: none;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
   margin-right: 10px;
 }
 
@@ -6546,6 +6546,7 @@ p.product-name a:hover {
 }
 .cart-table tfoot tr {
   background: none;
+  border: none;
 }
 .cart-table tfoot tr > td:after {
   content: '';
@@ -6590,7 +6591,7 @@ p.product-name a:hover {
 .cart-table .product-cart-total,
 .cart-table .product-cart-price {
   text-align: center;
-  font-size: 12px; /* KOS ADDED */
+  font-size: 14px; /* KOS ADDED */
 }
 .cart-table .cart-tax-total {
   position: relative;
@@ -6644,10 +6645,10 @@ p.product-name a:hover {
   height: 20px;
   border-color: silver;
   border-radius: 0;
-  /*margin-bottom: 10px;*/
+  margin-bottom: 10px;
   text-align: center;
   width: 2.5em;
-  font-size: 12px;
+  font-size: 14px;
 }
 .cart-table .product-cart-actions .button {
   margin-bottom: 5px;
@@ -6822,7 +6823,7 @@ p.product-name a:hover {
 }
 .shipping select {
   max-width: 100%;
-  height: 20px;
+  height: 30px;
   display: block;
   border: 1px solid silver;
 }
@@ -6865,7 +6866,7 @@ p.product-name a:hover {
   padding-top: 0;
 }
 .shipping .form-list input {
-  height: 20px;
+  height: 30px;
   margin-top: 4px;
   font-size: 12px;
 }
@@ -6936,7 +6937,7 @@ p.product-name a:hover {
 }
 .cart .cart-totals table {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 20px;
   text-transform: uppercase;
   width: 100%;
@@ -7028,7 +7029,7 @@ p.product-name a:hover {
   border-radius: 0;
   height: 30px;
   margin: 0;
-  width: 70%;
+  width: 75%;
   padding: 0;
 }
 
@@ -11046,6 +11047,9 @@ ul.add-to-links li {
     /*flex-grow: 2;*/
     margin-right: 10%;
   }
+
+
+
 }
 
 @media only screen and (max-width: 560px) {
@@ -11138,6 +11142,7 @@ select.decorated option:hover {
   text-align: center;
   font-size: 20px;
   /*width: 40px;*/
+  font-weight: normal;
 }
 
 .sort-by select,
@@ -11206,7 +11211,7 @@ a.skip-link:hover .count {
 td.product-cart-info h2.product-name {
   text-transform: none;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .product-cart-actions .button.btn-update {
@@ -11249,7 +11254,7 @@ table.info-wrapper td > .button.quantity-button {
 }
 
 a.remove, .cart-remove-button {
-  font-size: 14px;
+  font-size: 16px;
   color: #C00000;
 }
 
@@ -11260,23 +11265,242 @@ a.remove, .cart-remove-button {
   background: #0063a7;
 }
 
-.page-title.title-buttons li > .button.btn-proceed-checkout.btn-checkout {
+.checkout-types.top {
   display: none;
 }
 
 .button.btn-proceed-checkout.btn-checkout {
-  font-size: 18px;
+  font-size: 20px;
   background: #0063a7;
   color: #FFF;
   font-weight: 500;
   width: 100%;
   text-align: center;
+  line-height: 30px;
 }
 
 #shipping-zip-form .form-list {
   display: flex;
 }
 
+.footer-container .footer .links .block-title {
+  border: none;
+}
+
+#discount-coupon-form .field-wrapper {
+  width: 71%;
+  flex-grow: 1;
+}
+
+#discount-coupon-form .discount .discount-form {
+  display: flex;
+}
+
+#discount-coupon-form .discount .discount-form label {
+  flex-grow: 1;
+  line-height: 30px;
+}
+
+.cart-table {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1212px) {
+  #discount-coupon-form .input-text {
+    width: 74%;
+  }
+}
+@media only screen and (max-width: 1177px) {
+  #discount-coupon-form .input-text {
+    width: 73%;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  #discount-coupon-form .input-text {
+    width: 72%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #discount-coupon-form .input-text {
+    width: 71%;
+  }
+}
+@media only screen and (max-width: 1072px) {
+  #discount-coupon-form .input-text {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1045px) {
+  #discount-coupon-form .input-text {
+    width: 69%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #discount-coupon-form .input-text {
+    width: 68%;
+  }
+}
+@media only screen and (max-width: 1005px) {
+  #discount-coupon-form .input-text {
+    width: 67%;
+  }
+}
+@media only screen and (max-width: 987px) {
+  #discount-coupon-form .input-text {
+    width: 66%;
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  #discount-coupon-form label {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1067px) {
+  #discount-coupon-form label {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  #discount-coupon-form .input-text {
+    width: 75%;
+  }
+  #discount-coupon-form label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .skip-link .label {
+    display: none;
+  }
+  .page-title h1 {
+    font-size: 20px;
+  }
+  .table,
+  td.product-cart-info h2.product-name,
+  .cart-table .product-cart-total, .cart-table .product-cart-price,
+  .cart-table .product-cart-actions .qty,
+  .cart .cart-totals table {
+    font-size: 12px;
+  }
+  .cart .cart-totals table tfoot td {
+    font-size: 20px;
+  }
+  .button.btn-proceed-checkout.btn-checkout {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 967px) {
+  .store-language-container, .currency-switcher {
+    max-width: 8%;
+  }
+}
+@media only screen and (max-width: 956px){
+  #discount-coupon-form .input-text {
+    width: 74%;
+  }
+}
+@media only screen and (max-width: 929px){
+  #discount-coupon-form .input-text {
+    width: 73%;
+  }
+}
+@media only screen and (max-width: 911px) {
+  #discount-coupon-form label {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 842px) {
+  #discount-coupon-form label {
+    font-size: 13px;
+  }
+  .shipping h2 {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 892px){
+  #discount-coupon-form .input-text {
+    width: 72%;
+  }
+}
+@media only screen and (max-width: 868px){
+  #discount-coupon-form .input-text {
+    width: 71%;
+  }
+  .store-language-container, .currency-switcher {
+    max-width: 9%;
+  }
+}
+@media only screen and (max-width: 846px){
+  #discount-coupon-form .input-text {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 824px){
+  #discount-coupon-form .input-text {
+    width: 69%;
+  }
+}
+@media only screen and (max-width: 821px){
+  #header-nav {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 808px){
+  #discount-coupon-form .input-text {
+    width: 68%;
+  }
+}
+@media only screen and (max-width: 792px){
+  #discount-coupon-form .input-text {
+    width: 67%;
+  }
+}
+@media only screen and (max-width: 778px){
+  #discount-coupon-form .input-text {
+    width: 66%;
+  }
+}
+@media only screen and (max-width: 764px){
+  #discount-coupon-form .input-text {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 752px){
+  #discount-coupon-form .input-text {
+    width: 64%;
+  }
+  .store-language-container, .currency-switcher {
+    max-width: 10%;
+  }
+}
+@media only screen and (max-width: 739px){
+  #discount-coupon-form .input-text {
+    width: 63%;
+  }
+}
+@media only screen and (max-width: 728px){
+  #discount-coupon-form .input-text {
+    width: 62%;
+  }
+}
+@media only screen and (max-width: 717px){
+  #discount-coupon-form .input-text {
+    width: 61%;
+  }
+}
+@media only screen and (max-width: 707px){
+  #discount-coupon-form .input-text {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 770px){
+  .header-language-background {
+    display: block;
+  }
+
+}
 /*.catalog-product-view .btn-cart span.fa {*/
   /*color: #FFFFFF;*/
 /*}*/
