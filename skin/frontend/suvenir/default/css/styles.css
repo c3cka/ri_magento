@@ -701,7 +701,7 @@ body:not(.customer-account) .block:first-child .block-title {
 }
 
 .block-content {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
 }
 
 .block-content.unpad {
@@ -852,27 +852,39 @@ body:not(.customer-account) .block:first-child .block-title {
  */
 .block-account .block-title,
 .block-cms-menu .block-title {
-  padding-top: 0;
+  padding: 5px;
+  background: #0063a7;
+  border-bottom: 1px solid #fff;
+  text-align: center;
   border-top: none;
 }
 .block-account li,
 .block-cms-menu li {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
-  margin: 7px 0;
+  /*margin: 7px 0;*/
+  border-left: 0;
+  transition: border-left 0.3s ease-in-out;
 }
 .block-account li strong,
 .block-cms-menu li strong {
   font-weight: 400;
-  color: #4277b4;
+  color: #0063a7;
 }
 .block-account li a,
 .block-cms-menu li a {
-  color: #636363;
+  color: #FFF;
+  width: 100%;
+  display: block;
+  padding: 10px;
 }
 .block-account li a:hover,
 .block-cms-menu li a:hover {
-  color: #4277b4;
+  /*color: #0063a7;*/
+  /*text-decoration: none;*/
+  /*background: #FFF;*/
+  /*margin-top: -20px;*/
+  /*transition: all 0.3s ease-in-out;*/
 }
 
 /* ============================================ *
@@ -1089,7 +1101,7 @@ a.button:hover {
 .buttons-set {
   clear: both;
   margin: 10px 0 0;
-  padding-top: 10px;
+  padding: 10px 0;
   border-top: 1px solid #ededed;
   text-align: right;
 }
@@ -1339,7 +1351,7 @@ a.button:hover {
 
 .col-left {
   float: left;
-  width: 25%;
+  width: 20%;
   padding-left: 0;
   /* Remove the 15px padding */
   clear: left;
@@ -1351,7 +1363,7 @@ a.button:hover {
 .col-right {
   float: right;
   width: 20%;
-  padding-right: 0;
+  /*padding-right: 0;*/
   /* Remove the 15px padding */
 }
 .col-right img {
@@ -3575,7 +3587,7 @@ a.skip-link:hover{
     -webkit-box-shadow: 0px 3px 15px 0px rgba(00,99,167,0.75);
     -moz-box-shadow: 0px 3px 15px 0px rgba(00,99,167,0.75);
     box-shadow: 0px 3px 15px 0px rgba(00,99,167,0.75);
-    background-image: linear-gradient(#0097ff, #0063a7);
+    background-image: linear-gradient(#0063a7, #0097ff);
     background-color: #0063a7;
   }
 }
@@ -3627,11 +3639,15 @@ a.skip-link:hover{
   text-transform: uppercase;
   font-weight:500;
   /*border-right: 1px solid #FFFFFF;*/
+  height: 250px;
+  line-height: 470px;
+  transition: all 0.5s ease-in-out;
 }
 .nav-primary li.level0.active > a {
   background:#fff;
   color:#4277b4;
   text-shadow: none;
+  background-repeat: no-repeat;
 }
 
 /* ============================================ *
@@ -3707,6 +3723,7 @@ a.skip-link:hover{
     display: block;
     width: 100%;
     text-align: center;
+    background-repeat: no-repeat;
   }
   .nav-primary li:last-child > a {
     border-bottom: none;
@@ -3714,9 +3731,11 @@ a.skip-link:hover{
   }
   .nav-primary a:hover,
   .nav-primary li:hover > a {
-    color: #4277b4;
+    color: #0063a7;
 	background:#fff;
-	text-shadow: #000;
+	/*text-shadow: #000;*/
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
   }
   .nav-primary .menu-active {
     /*z-index: 200;*/
@@ -3940,7 +3959,7 @@ a.skip-link:hover{
   }
 
   #header-account a:hover {
-    color: #4277b4;
+    /*color: #4277b4;*/
   }
 }
 /* -------------------------------------------- *
@@ -3958,9 +3977,9 @@ a.skip-link:hover{
 }
 
 #header-account a:hover {
-  color: #fff;
-  background: #0063a7;
-  text-decoration: none;
+  /*color: #fff;*/
+  /*background: #0063a7;*/
+  /*text-decoration: none;*/
 }
 
 /* ============================================ *
@@ -4381,12 +4400,14 @@ body.catalogsearch-result-index .page-title h1 {
 .products-list .action .button:hover,
 .products-grid .actions .button:hover {
   box-shadow: 0 0 5px 0 #0063a7;
+  transition: all 0.3s ease-in-out;
 }
 .products-list .action .button,
 .products-grid .actions .button {
   white-space: normal;
   /*flex-grow: 2;*/
   /*margin-right: 63%;*/
+  transition: all 0.3s ease-in-out;
 }
 
 /* -------------------------------------------- *
@@ -4399,7 +4420,7 @@ h5.product-name,
 p.product-name {
   margin: 0;
   /*margin-bottom: 0.5em;*/
-  color: #636363;
+  color: #3a3a3c;
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -4418,7 +4439,8 @@ h3.product-name a,
 h4.product-name a,
 h5.product-name a,
 p.product-name a {
-  color: #636363;
+  color: #3a3a3c;
+  text-transform: none;
 }
 h2.product-name a:hover,
 h3.product-name a:hover,
@@ -4443,7 +4465,7 @@ p.product-name a:hover {
 }
 .products-grid .product-name a,
 .products-list .product-name a {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* ============================================ *
@@ -7239,7 +7261,7 @@ p.product-name a:hover {
 }
 
 .opc select {
-  max-width: 365px;
+  max-width: 200px;
   width: 100%;
 }
 
@@ -7922,6 +7944,11 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   float: none;
   min-width: 50%;
   margin: 0;
+  background: #0063a7;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
 }
 .customer-account-login .col2-set .col-1 ul {
   list-style: disc;
@@ -11126,6 +11153,7 @@ select.decorated option:hover {
   margin-top: 48px;
   /*border-radius: 5px;*/
   border-left: 1px solid #ddd;
+  padding-top: 10px;
 }
 .sidebar .block-viewed .block-title strong {
   font-weight: 500;
@@ -11191,7 +11219,8 @@ select.decorated option:hover {
 .toolbar-bottom .toolbar .sorter, .toolbar-bottom .toolbar .pager .count-container {
   display: none;
 }
-.toolbar-bottom .toolbar .pager {
+.toolbar-bottom .toolbar .pager,
+.pager.pager-no-toolbar .pages ol {
   width: 100%;
 }
 
@@ -11209,6 +11238,9 @@ select.decorated option:hover {
   background: #0063a7;
   color: #FFFFFF;
   /*border: 1px solid #0063a7;*/
+}
+.pager.pager-no-toolbar .pages li {
+  margin: 0;
 }
 .page-header-container img {
   width: 100%;
@@ -11360,7 +11392,7 @@ a.remove, .cart-remove-button {
   margin: 0;
 }
 
-#product_addtocart_form .block.block-related {
+.block.block-related {
   width: 100%;
   padding: 0;
 }
@@ -11387,8 +11419,111 @@ a.remove, .cart-remove-button {
   font-size: 12px;
   text-align: center;
 }
-.block-related .block-content {}
+.block-related .block-content li.item {
+  margin: 0 0 10px 7px;
+}
 
+/* OR WITHOUT '_rgb' FOR BW */
+#header-nav #nav ol.nav-primary li.nav-1 a.level0 {
+  background-image: url('http://dev.rijeka.hr/media/catalog/product/k/e/keramika_karolina_rijecka_velika_rgb.png ');
+}
+#header-nav #nav ol.nav-primary li.nav-2 a.level0 {
+  background-image: url('http://dev.rijeka.hr/media/catalog/product/s/l/slika_svvid2_velika_rgb.png');
+}
+#header-nav #nav ol.nav-primary li.nav-3 a.level0 {
+  background-image: url('http://dev.rijeka.hr/media/catalog/product/f/i/figura_zajanski_zvoncar_32cm_rgb.png');
+}
+#header-nav #nav ol.nav-primary li.nav-4 a.level0 {
+  background-image: url('http://dev.rijeka.hr/media/catalog/product/i/r/ir-102_rgb.png');
+}
+#header-nav #nav ol.nav-primary li.nav-5 a.level0 {
+  background-image: url('http://dev.rijeka.hr/media/catalog/product/r/a/razanagroti_rgb.png');
+}
+#header-nav #nav ol.nav-primary li.nav-6 a.level0 {
+  background-image: url('http://dev.rijeka.hr/media/catalog/product/m/o/morcic_lancic_veliki_rgb.png');
+}
+#header-nav #nav ol.nav-primary li a {
+  background-size: contain;
+  background-position: center;
+}
+
+.account-create form.scaffold-form .buttons-set button.button {
+  background: #0063a7;
+  color: #fff;
+  font-size: 14px;
+}
+.block-account .block-title strong {
+  font-size: 16px;
+  color: #fff;
+}
+.block-account .block-content ul {
+  background: #0063a7;
+}
+.block-account li.current {
+  background: #fff;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-left: 15px solid #0063a7;
+}
+.block-account li.current a {
+  margin-top: -20px;
+}
+.my-account .scaffold-form .buttons-set button.button {
+  background: #0063a7;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.block-account li:hover {
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 21px solid transparent;
+  border-left: 15px solid #0063a7;
+  background: #fff;
+}
+.block-account li:hover a {
+  color: #0063a7;
+  text-decoration: none;
+  background: #FFF;
+  margin-top: -20px;
+  /*height: 0;*/
+  /*transition: all 0.3s ease-in-out;*/
+}
+#header-account .links li:hover {
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid #FFF;
+  background: #0063a7;
+  /*transition: border-left 0.3s ease-in-out;*/
+}
+
+#header-account .links li:hover a {
+  color: #FFF;
+  background: #0063a7;
+  text-decoration: none;
+  margin-top: -16px;
+}
+#header-account .links ul li {
+  border-left: 0;
+  transition: border-left 0.3s ease-in-out;
+}
+
+#billing-new-address-form .input-box select {
+  height: 30px;
+}
+#billing-buttons-container button.button,
+#co-shipping-method-form .buttons-set .button,
+#checkout-step-payment #payment-buttons-container button,
+#review-buttons-container .btn-checkout {
+  background: #0063a7;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
 /**********************************************************************************************************************/
 @media only screen and (max-width: 1212px) {
   #discount-coupon-form .input-text {
