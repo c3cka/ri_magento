@@ -795,3 +795,22 @@ Stack trace:
 #12 C:\xampp\htdocs\dev.rijeka.hr\app\Mage.php(683): Mage_Core_Model_App->run(Array)
 #13 C:\xampp\htdocs\dev.rijeka.hr\index.php(83): Mage::run('', 'store')
 #14 {main}
+2018-05-17T08:34:26+00:00 DEBUG (7): Exception message: Decoding failed: Syntax error
+Trace: #0 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Helper\Data.php(659): Zend_Json::decode('', 1)
+#1 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Persistent\Model\Session.php(133): Mage_Core_Helper_Data->jsonDecode(NULL)
+#2 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Model\Abstract.php(226): Mage_Persistent_Model_Session->_afterLoad()
+#3 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Persistent\Model\Session.php(168): Mage_Core_Model_Abstract->load('2', 'customer_id')
+#4 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Persistent\Model\Observer\Session.php(67): Mage_Persistent_Model_Session->loadByCustomerId('2')
+#5 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Model\App.php(1358): Mage_Persistent_Model_Observer_Session->synchronizePersistentOnLogin(Object(Varien_Event_Observer))
+#6 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Model\App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Persistent_Model_Observer_Session), 'synchronizePers...', Object(Varien_Event_Observer))
+#7 C:\xampp\htdocs\dev.rijeka.hr\app\Mage.php(448): Mage_Core_Model_App->dispatchEvent('customer_login', Array)
+#8 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Customer\Model\Session.php(226): Mage::dispatchEvent('customer_login', Array)
+#9 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Customer\controllers\AccountController.php(351): Mage_Customer_Model_Session->setCustomerAsLoggedIn(Object(Mage_Customer_Model_Customer))
+#10 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Customer\controllers\AccountController.php(304): Mage_Customer_AccountController->_successProcessRegistration(Object(Mage_Customer_Model_Customer))
+#11 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mage_Customer_AccountController->createPostAction()
+#12 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('createpost')
+#13 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 C:\xampp\htdocs\dev.rijeka.hr\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 C:\xampp\htdocs\dev.rijeka.hr\app\Mage.php(683): Mage_Core_Model_App->run(Array)
+#16 C:\xampp\htdocs\dev.rijeka.hr\index.php(83): Mage::run('', 'store')
+#17 {main}
