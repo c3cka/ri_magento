@@ -11256,6 +11256,7 @@ select.decorated option:hover {
   flex-grow: 1;
   max-width: 55%;
   padding: 5px;
+  /*KOS*/
 }
 .tz-large {
   height: 50px;
